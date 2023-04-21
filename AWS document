@@ -1,0 +1,1995 @@
+                                          ***AWS----(amazon web services)***
+                                        ======================================
+                                 
+
+INTRODUCTION TO AWS
+
+1.FOUNDATION-IAM
+2.STORAGE SERVICES-S3,EBS,EFS
+3.COMPUTING SERVICES-EC2,ELB,AUTOSCALING WORKSPACE
+4.NETOWRKING SERVICES-VPC,NAT,ROUTE53
+5.MONITORING SERVICES-CLOUDWATCH
+6.SERVERLESS COMPUTING -AWS LAMBDA
+7.PROVISIONG SERVICE-CLOUD FORMATION
+8.PALTFORM AS A SERVICE-ELASTIC BENSTALK
+9.DATABASE SERVICE -RDS,DYNAMODB
+10.NOTIFICATION-SQS,SNS
+
+========================================================================================================================
+
+**cloud:-
+    It is a sharing of resources from a remote location or accessing this resources via internet on pay as you go model.
+
+
+2.cloud computing:-
+   it enables on demand delivery services like computing,storage,database,networking,etc. and other It resources 
+   accessed through cloud service platform via the internet with pay-as-you-go model. 
+
+ 
+**There are the following operations that we can do using cloud computing:
+
+• Developing new applications and services
+• Storage, back up, and recovery of data Hosting blogs and websites
+• Delivery of software on demand 
+• Streaming videos and audios
+• Analysis of data
+
+
+**Why Cloud Computing?
+
+1.Small as well as large IT companies, follow the traditional methods to provide the IT infrastructure. That means for any
+  IT company, we need a Server Room that is the basic need of IT companies.
+2.In that server room, there should be a database server, mail server, networking, firewalls, routers, modem, switches, QPS 
+  (Query Per Second means how much queries or  load will be handled by the server),configurable system, high net speed, and 
+  the maintenance engineers.
+3.To establish such IT infrastructure, we need to spend lots of money.To overcome all these problems and to reduce the IT
+  infrastructure cost, Cloud Computing comes into existence.
+
+----------------------------------------------------------------------------------------------------------------------------
+                       
+**Characteristics------1.broad network access
+                       2.on demand self service
+                       3.resource pooling
+                       4.measured services
+                       5.rapid elasticity
+                       
+**Features-------------1.scalable
+                       2.flexible
+                       3.pay-as-you-go
+                       4.secure and diseaster recovery
+                       5.cost effective
+                       6.security
+
+**Advantages-----------1.resources accessible anywhere;anytime
+                       2.on demand self-service
+                       3.reduced IT cost
+                       4.offers security
+                       5.location and device independance
+                       6.save our time
+
+**Disadvantages--------1.network connection dependancy internet is must
+                       2.lack of support
+                       3.may not get all the features 
+
+=============================================================================================================================
+
+**cloud service models--------1.Iaas (infrastructure as a service)
+                              2.Paas (platform as a service)
+                              3.Saas (software as a service)
+ 
+(A).Iaas-----(infrastructure as a service)
+   1.it is used by system administrator.
+   2.it simply provides networking,servers,security for developing the applications.
+   3.It provide a virtual data center to store information and to create platform for app development,testing,
+     and deployment.  
+   4.it provides access to fundamental resources such as physical machines,virtual machines,virtual storage etc.
+   5.we can scale up and shrink the resources as per requirement.
+   6.it is a form of cloud computing that derives the fundamental compute,networking and storage resources to the
+     consumer on demand,over the internet and pay-as-you-go basis.
+   7.we have control over computing resources through administrator access to VMS.
+   8.it only provides infrastructure.
+  
+  IAAS also offers:-
+   1.IP addresses.
+   2.virtual machine disk storage.
+   3.VLAN (virtual local area network.
+   4.load balancer.
+   
+  Characteristics of laaS:-
+   1.Resources are available as a service
+   2.Services are highly scalable Dynamic and flexible
+   3.GUI and API-based access
+   4.Automated administrative tasks
+   5.Example: DigitalOcean, Linode, Amazon Web Services (AWS), Microsoft Azure, Google Compute Engine (GCE), Rackspace,               
+     and Cisco Metacloud.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+(B).Pass-----(platform as a service)
+   1.it is used by developers.
+   2.it provides platform and environment (i.e runtime environment) to allow developers to build application and services    
+     over internet.
+   3.offers development and deployment tools required to develop applications.
+   4.it provides infrastructure + platform
+   5.we will interact with the UI only and O.S will be provided by vendor.we do not have control over it.
+   6.PAAs provides software and hardware on its our infrastructure.
+   7.we do not have control over the cloud infrastructure including network,storage,servers,os etc. all these are provide 
+     by the platform as a service cloud.
+   8.but we have control over the deployed application and possibly configuration.
+   
+  advantage:-
+   1.cost effective.
+   2.no need to purchase expensive servers,software and hardware.
+   3.easy deployment web applications.
+   4.software and hardware managed by provider.
+
+  characteristics:-
+   1.Accessible to various users via the same development application Integrates with web services and databases
+   2.Builds on virtualization technology, so resources can easily be scaled up or down as per the organization's need
+   3.Support multiple languages and frameworks. Provides an ability to "Auto-scale".
+   4.Example: AWS Elastic Beanstalk, Windows Azure. Heroku, Force.com, Google App Engine, Apache Stratos, Magento 
+     Commerce Cloud, and OpenShift.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+(c).Saas-----(software as a service)
+   1.it is used by end user.
+   2.it is way of delivering service and application over the internet.
+   3.maintaince of hardware and software is done by vendor.
+   4.we need not install the software in our machine.
+   5.so it removes the cost of hardware and software maintaince.
+   6.SAAS provides infrastructure + platform + software						  
+ 
+ characteristics:-
+  1.software maintained by vendor.
+  2.cost effective (pay-as-per-use).
+  3.available on demand.
+  4.software are automatically upgraded.
+  5.works on shared model one software used by multiple clients.
+  6.can be scale up or scale down anytime according to our need.
+  7.Managed from a central location Hosted on a remote server
+  8.Accessible over the internet Users are not responsible for hardware and software updates. Updates are
+  9.applied automatically. The services are purchased on the pay-as-per-use basis
+ 10.Example: BigCommerce, Google Apps, Salesforce, Dropbox, ZenDesk, Cisco WebEx, ZenDesk, Slack, and GoToMeeting.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+9.cloud deployment models:----1.public cloud
+                              2.private cloud
+                              3.hybrid cloud
+                              4.community
+
+
+A.public cloud:
+  1.public cloud is open to all to store and access information via the internet using pay-per usage method.
+  2.In public cloud,computing resources are managed and operated by cloud service provider.
+  3.Public clouds offer a high level of redundancy and availability, with multiple data centers and failover mechanisms in 
+    place to ensure that services are always available. 
+  4.Public clouds provide a range of computing services, such as virtual machines, storage, and networking, that can be 
+    accessed by multiple organizations or users.     
+                    
+  Advantages:-
+    1.it is owned at lower cost than private and hybrid cloud.
+    2.it is maintained cloud service provider,so do not need to worry about the maintaince.
+    3.it is easier to integrate.Hence it offery cloud service as a better flexibility approach to consumers.
+    4.it's location is independant because its services are delivered through the internet.
+    5.it is highly scalable as per requirement of computing resources.
+
+  Disadvantages:-
+    1.it is less secure because resources are shared publicaly.
+    2.performance depends upon the high-speed internet network.
+    3.the client has no control of data.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+B.private cloud:-
+   1.it is a cloud which is used by big organisation for storing the data and accessing the data within a single organisation.
+   2.In a private cloud, the computing resources (such as servers, storage, and networking) are owned and managed by the
+     organization, rather than a third-party provider.
+   3.it is also known as internal cloud or corporate cloud.
+   4.Private clouds are typically used by organizations that have strict security, compliance, or regulatory requirements that 
+     prevent them from using public cloud services. 
+   5.Private clouds can be used to provide a range of cloud computing services, such as virtual machines, storage, and networking,
+     to internal users and external customers.
+   6.Private clouds provide greater control and customization options than public clouds, allowing organizations to tailor their
+     cloud environment to their specific needs.
+  
+  Advantages:-
+    1.private cloud provides a high level of security and privacy to the users.
+    2.private cloud offers a high level of performance with improved speed. 
+    3.it allows the IT team to quickly allocate and deliver on-demand IT resources.
+    4.the organisation has full control over the cloud because it is managed by the organization itself.
+    5.data security is the first priority.
+
+  Disadvantages:-
+    1.skilled people are required to manage and operate cloud services.
+    2.private cloud accissible within the organisation,so the area of operation is limited.
+    3.it is not suitable for organization which have high user base.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+C.hybrid cloud:
+   1.it is a combination of public cloud and private cloud
+   2.hybrid cloud=public cloud + private cloud
+   3.it is partially secure because the services which are running on the public can be accessed by anyone,while the services
+     which are running on the private cloud can not be accessed anyone.
+   4.example:-Google application suite (Gmail,google apps,google drive),Office 365 (MS office on the web and one drive)
+     amazon web service
+
+  Advantages:-
+    1.it is suitable for those organization which require more security than the public cloud.
+    2.it helps you to deliver new products and services more quickly.
+    3.it provides an excellent way to reduce the risk.
+    4.it offers flexible resources because of the public cloud and secure resources.
+  
+  Disadvantages:-
+    1.in hybrid cloud security is not good as the private cloud.
+    2.managing a hybrid cloud is complex because it is difficult to manage more than one type of deployment model.
+    3.in hybrid cloud,the reliability of the services depends on cloud service providers.
+
+-------------------------------------------------------------------------------------------------------------------------
+  
+D.community cloud:
+   1.it allows systems and services to be accessible by a group of several oraganization to share the information between 
+     the oraganization
+   2.example--health care community cloud
+
+  Advantages:-
+    1.it is cost-effective because the whole cloud is being shared by several organization or communities
+    2.community cloud is suitable for organization that want to have a collaborative.
+    3.cloud with more security features than the public cloud.
+    4.it provides collaborative and distributive environment.
+    5.it allows you to share cloud resources,infrastructure,and other capabilities among various organizations.
+   
+  Disadvantages:-
+    1.it is not a good choice for every organization.
+    2.security features is not good as the private cloud.it is not suitable if there is no collaboration.
+    3.the fixed amount of data storage and bandwidth is shared among all community.
+
+===========================================================================================================================
+
+**Benefits of cloud computing:-
+
+1.Scalability: 
+    Cloud computing allows businesses to easily scale their computing resources up or down to meet changing demands.
+    This means that businesses can easily accommodate spikes in traffic or usage without having to invest in additional 
+    hardware or infrastructure.
+
+2.Cost savings:
+    Cloud computing can be more cost-effective than traditional on-premises computing because businesses only pay for the 
+    resources they use. This eliminates the need for upfront investments in hardware and infrastructure, and can also reduce 
+    ongoing maintenance costs.
+
+3.Increased agility: 
+   Cloud computing allows businesses to rapidly deploy new applications and services, enabling them to respond more quickly
+   to changing business needs and market conditions.
+
+4.Accessibility:
+    Cloud computing allows users to access their applications and data from anywhere with an internet connection, making it 
+    easier to collaborate and work remotely.
+
+5.Reliability: 
+   Cloud computing providers typically offer high levels of availability and uptime, which can help ensure that business-
+   critical applications and services are always available when needed.
+
+6.Security:
+   Cloud computing providers typically offer a range of security features and controls to help protect customer data and
+   applications from cyber threats and other security risks.
+
+6)Deploy globally in minutes:-
+   With the cloud, you can expand to new geographic regions and deploy globally in minutes. For example, 
+   AWS has infrastructure all over the world, so you can deploy your application in multiple physical locations with just
+   a few clicks. Putting applications in closer proximity to end users reduces latency and improves their experience.  
+
+=========================================================================================================================
+
+**Region:-
+  
+  1.aws region are separate geographic area that aws used to house in its infrastructure there are distributed around the
+    world so that customer can choose a region closet to them in order to host their cloud infrastructure there.
+  2.the closer your region is to you the bettar so that you can reduce network latency as much as possible for your end 
+    user,you want to be near data center for cast service.
+
+------------------------------------------------------------------------------------------------------------------------
+
+**Availability zone:-
+
+  1.an availability zone is logical building block that makes up aws region.
+  2.there are 69 availability zones which are isolated location data centre wihtin region.
+  3.each region has multiple availability zones.
+  4.each region has 3 availability zones.
+  5.when you design your infrastructure to have backup of data in other availability zones.
+
+==========================================================================================================================
+
+**EC2 instances(elastic compute cloud):-
+
+  1.it is used to launch virtual server,virtual machine etc.
+  2.it provides scalable computing capacity in aws cloud.
+  3.you can use amazon EC2 to launch as many or few virtual servers as your needs,configure security and networking and 
+    manage storage.
+  4.it enables you to scale up or scale down the instances.
+  5.it is having two storage options i.e. EBS and instance store.
+  6.pre-configured templates are available known as amazon machine image (AMI).
+  7.by default,when you create on EC2 account with amazon,your account is limited to maximum of 20 instances per EC2  
+    region with two dafault high I/0 instances.
+
+ 
+**Types of EC2 instances:-
+
+    1.general purpose---------------balanced memory
+    2.compute optimised-------------more cpu than ram
+    3.storage optimised-------------low latency
+    4.memory  optimised-------------more ram
+    5.accelerated computing---------graphics optimised
+    6.high memory-------------------high ram,nitro sys
+    7.previous generation
+ 
+===========================================================================================================================
+
+**Two types of block store devices for EC2:-
+    1.EBS (elastic block storage)
+    2.Instance storage
+
+
+a).EBS (elastic block storage):-
+   1.EBS volume behaves like ram,Unformatted,external block storage devices that you can attach to your EC2 instance.
+   2.EBS vloumes are block storage devices suitable for database style data that requires frequient reads and writes.
+   3.EBS volumes are attached to your EC2 instances through the aws network like virtual hard drives.
+   4.an EBS volume can attach to a single EC2 instance only at a time.
+   5.both EBS volume and EC2 instance must be in the same AZ.
+   6.it is a persistant storage means if u have to terminate the EC2 instance the data will not be deleted.
+
+
+b).Instance storage:-
+   1.instance store backed EC2 basically the virtual hard drive on the host allocated to this EC2 instance.
+   2.limited to 10GB per device.
+   3.it is non persistant storage means if u teminate the EC2 instance the data will be deleted.
+   4.the EC2 instance can't be stopped,can only be rebooted or teminated.
+   5.Terminate will delete the data.
+  
+===============================================================================================================================
+ 
+**EFS-(elastic file system):-
+   1.EFS stands for Elastic File System, which is a scalable and fully-managed file storage service offered by Amazon Web 
+     Services (AWS).
+   2.It provides a simple and flexible interface for creating and managing file systems, allowing multiple instances to 
+     access the same file system simultaneously.
+   3.With EFS, you can easily store and share files across multiple instances, containers, and serverless functions, without
+     worrying about the underlying infrastructure or capacity planning.
+   4.EFS automatically scales up or down the storage capacity as per your application needs, and also provides high availability 
+     and durability of your data.
+   5.EFS supports multiple file access protocols such as NFSv4, which enables you to access your file systems from on-premises 
+     or cloud-based instances. Additionally, EFS also supports file locking, encryption at rest, and seamless data migration 
+     between file systems, making it a highly versatile and reliable storage solution for your applications in the AWS cloud.
+
+================================================================================================================================
+
+**Elastic IP:-
+
+  1.It is nothing but static ip.
+  2.suppose we have to terminate the instance the instance will be permanantly terminated but when we have to stop the 
+    instance and next time start the instance the ip will be automatically changes.but we have not to change the ip we can 
+    attached elastic ip to a instance then next time you start the machine the ip will not be change.
+  3.A Public IP address associated with an instance is not static means when you stop the instance it will automatically
+    changes whereas Elastic IP address is a static public address associated with your AWS account.
+  4.private ip is remain same in all conditions
+  5.all AWS accounts are limited to five Elastic IP addresses per Region.
+
+2)why should we avoid elastic ip:-
+   While Elastic IP addresses can be moved between instances, they are still associated with only a single region, and 
+   only for use within AWS, so they are not totally flexible.
+     
+3)How to launch a EC2 instance:-
+   1.name---------my-server
+   2.select  application o.s image
+   3.instance type
+   4.key pair-------create a new key pair
+   5.network setting------vpc----subnet
+   6.inbound security group rules
+   7.configure storage
+   8.launch instance 
+   9.then copy the public ip
+
+  10.open the putty
+  11.paste the ip there
+  12.then ssh
+  13.auhtentification---creadentials
+  14.browse---the key you created attach 
+  15.open
+  16.host the server you have created
+
+
+4)How to attach a elastic ip----static ip to a EC2 instance:-
+   1.go to the elastic ip
+   2.allocate elastic ip
+   3.then go to action
+   4.associate elastic ip address
+   5.allocate the elastic ip and you see that when you stop or start the instance the ip will not be change.
+
+=========================================================================================================================
+
+**security group:-
+   
+   1.it is a virtual firewall works at ENI level.
+   2.upto 5 security groups per EC2 instance interface can be applied.
+   3.can only have permit rules,cannot have deny rule.
+   4.stateful.return traffic,of allowed inbound traffic is allowed,even if there are no rules to allow it.
+   5.if you allow port in inbound traffic then you can not attach separate port in outbound traffic the port will be 
+     automatically allow both inbound and outbound traffic.
+
+base points:-
+
+   1.it is operate at instance level.
+   2.support allows rules only.
+   3.stateful,return traffic is automatically allowed.
+   4.applies to an instance only
+
+How to attach a security group:-
+   1.click on instance
+   2.go to security group
+   3.edit inbound traffic------add rule  
+   4.save
+
+=============================================================================================================================
+
+**EBS(elastic block storage):-
+
+   1.EBS volume behave like ram,Unformatted,external block storage devices that you can attach to your EC2 instance.
+   2.EBS vloumes are block storage devices suitable for database style data that requires frequient reads and writes.
+   3.EBS volumes are attached to your EC2 instances through the aws network like virtual hard drives.
+   4.an EBS volume can attach to a single EC2 instance only at a time.
+   5.both EBS volume and EC2 instance must be in the same Availability zone.
+   6.it is a persistant storage means if u have to terminate the EC2 instance the data will not be deleted.
+
+
+1)How to add volume:-
+   1.1st create a volume
+   2.gp2 
+   3.size
+   4.ap-south-1
+   5.create volume
+
+   6.click on created volume
+   7.go to action---attached volume
+   9.instance
+  10.attched volume  
+ 
+  11.go to instance 
+  12.refresh instance
+  13.click on instance
+  14.check storage---the volume will be attached
+
+  15.then configure with putty
+  16.paste the public ip there
+  17.ssh----auth---credentials---------browse a file
+  18.then create a directory-----------mkdir /pune
+  19.then give them a filesystem-------mkfs.ext4 /dev/xvdf
+  20.then mount -----------------------mount /dev/xvdf /pune
+  21.df -Th
+  22.the partition will be seen 
+
+==================================================================================================================================
+
+**AMI(amazon machine image):-
+
+  1.it is a amazon machine image.
+  2.amazon machine image is provided by aws that provides the inforamation required to launch an instance.
+  3.it is a template that contents a software information.
+  4.from an AMI, you launch an instance, which is a copy of the AMI running as a virtual server in the cloud.
+  5.You can launch multiple instances from a single AMI when you require multiple instances with the same configuration.
+
+
+How to create a AMI(amazon machine image):-
+  1.click on instance
+  2.go to action--------click on image and template----create template
+  3.give a name
+  4.launch or create a AMI
+ 
+  5.then click on created AMI
+  6.launch a instance from that AMI
+  7.the AMI will be default AMI set which you can be created.
+
+==================================================================================================================================
+
+**EC2 LOAD BALANCER:-
+  
+  a load balancer acts as the traffic cop sitting infront of your server and routing client request accross all server capable of 
+  fulfilling those request.
+
+**application load balancer:-
+  
+  1.an application load balancer makes routing decision at application layer(http,https).
+  2.support base path can route a request in one or more port on each container instance in your cluster.
+  3.it works on the OSI model layer 7 i.e. called application layer(http,https).
+  4.ALB uses target groups to route traffic to EC2 instances, containers, and IP addresses.
+  5.ALB supports cross-zone load balancing, which means that it can distribute traffic evenly across multiple Availability Zones
+  6.ALB uses Elastic IP addresses (EIPs) for its frontend.
+  7.ALB supports SSL/TLS offloading, which means that it can terminate SSL/TLS connections and decrypt traffic before forwarding 
+    it to the backend.
+  8.ALB performs health checks at the application layer to ensure that traffic is sent only to healthy instances.
+  9.ALB supports HTTP, HTTPS, and WebSocket protocols
+
+**network load balancer:-
+
+  1.an network load balancer makes routing decision at transport layer (tcp).
+  2.it can handle millians of request per second.
+  3.it works on the OSI model of layer 4 i.e transport layer.
+  3.while NLB uses target groups to route traffic to IP addresses and instances.
+  4.while NLB does not support cross-zone load balancing.
+  5.while NLB uses static IP addresses assigned to the network interface of the load balancer.
+  6.while NLB does not support SSL/TLS offloading.
+  7.while NLB performs health checks at the transport layer.
+  8.while NLB supports TCP, UDP, and TLS protocols.
+
+===================================================================================================================================
+
+**AUTOSCALING:-
+  
+  1.it is a service which is provided by aws to autoscale up and scale down the instances based on the demand for your application.
+  2.autoscaling helps you save cost by cutting down the number of EC2 instances when not needed and scaling out to add the instances
+    when it is required.
+  3.it works on the scaling policies that we can attach to the autoscaling group.
+  4.When the demand for your application is increases,autoscaling will automatically add the instances to handle the load.
+  5.Conversely,when the demand for your application is decreases,autoscaling will automatically remove unnecessary instances to 
+    save the cost.
+  6.autoscaling in AWS is a powerful feature that can help you optimize your compute resources and improve the performance and
+    scalability of your application or service.
+
+
+**Types of scaling:-
+  
+   a).Vertical scaling:
+       1.With vertical autoscaling,you can add or remove CPU, memory, storage,or other resources to an instance to increase or 
+         decrease its capacity.
+       2.In other words, it involves adding more resources to an existing instance, rather than adding more instances.
+    
+   B).Horizontal scaling:-
+       1.Horizontal scaling involves adding more instances to a system to handle increased demand or workload.
+       2.Horizontal scaling is often used for applications or services that experience high traffic or workload spikes, where 
+         additional computing resources are needed to handle the increased demand.
+       3.Horizontal scaling can be more cost-effective than vertical scaling (scaling up), as adding additional smaller instances
+         is often cheaper than adding more resources to a single larger instance.
+
+====================================================================================================================================
+
+**Difference between launch configuration and launch template:-
+ 
+  1.launch configuration:-1.it is a older format for creating a instance.
+                          1.it is a instance configuration template used with autoscaling group to create a instance. 
+                          2.it can be associated with multiple ASGs. 
+                          3.after creating an instance with the help of launch configuration we can not modify them.
+                          4.we have to create new instance and attach to the autoscaling group if any modification is 
+                            required.    
+                          5.Basic or detailed monitoring for the instances in the ASG can be enabled when a launch 
+                            configuration is created.
+
+                                
+  2.launch template-----:-1.it is a newer format or more flexible format to create a instance.
+                          2.it is a template which is used to launch an instance using EC2 console.
+                          3.after creating an instance we can also modify them.
+                          4.it enable you to store the ami,instance type,security groups,and key pair etc.so that you do not need to 
+                            define these parameters every time when you launch an instance.
+                          5.Launch templates allow you to maintain and update your instances in a more efficient way.
+                          6.it allows multiple versions of a template to be defined.
+                          7.it allows the selection of both Spot and On-Demand Instances or multiple instance types.
+                          8.it supports EC2 Dedicated Hosts. Dedicated Hosts are physical servers with EC2 instance 
+                            capacity that are dedicated to your use.
+                          9.it Supports the multiple instance types and purchase options in a single ASG.
+           
+    In summary, while both launch configuration and launch template can be used to launch instances in AWS, launch templates offer 
+    more advanced customization options, greater flexibility, and easier maintenance and management compared to launch configurations.
+
+=======================================================================================================================================
+
+**CLOUDWATCH:-
+   1.CloudWatch is a monitoring service provided by Amazon Web Services (AWS).
+   2.It allows you to collect and monitor log files, and set alarms.
+   3.Metrics are numerical data that can be measured, such as CPU utilization, network traffic, and database connections.
+   4.You can use CloudWatch to visualize and graph these metrics to gain insights into your system's performance and health.
+   5.CloudWatch can also be used to monitor and collect logs from AWS resources such as EC2 instances, Lambda functions, and more.
+   6.With CloudWatch Alarms, you can set up notifications and automated actions when a specific metric crosses a predefined threshold.
+   7.CloudWatch can also be used to monitor and manage resources in real-time, such as autoscaling groups and load balancers.
+   8.Overall, CloudWatch helps you monitor your AWS resources, troubleshoot issues, and optimize performance.
+
+=======================================================================================================================================
+
+**IAM (identity and access management):-
+    1.it refers to a framework or policies and technologies for ensuring that the proper people in an organisation have the appropriate 
+      access to the technology resources.
+    2.AWS Identity and Access Management (IAM) is a web service that provides secure access to AWS resources.
+    3.we can use IAM to control who is authenticated (signed-in) and authorised (has permission) to use resources.
+    4.It allows you to manage users,groups,and permissions to control who can access which resources in your AWS account. 
+
+**IAM user:-
+   1.an IAM user is a resource in IAM that has associated credential and permission.
+   2.an IAM user can represent a person or an application that gives its creadentials to make a aws request.
+
+**IAM group:-
+   1.an IAM group is an identity that spacify collection of IAM user. 
+   2.we can add no of users in a group so that we can spacify permission for multiple user at a same time.
+   3.group make permission easier to manage for large set of user.
+
+**IAM role:-
+   1.IAM role in aws works like a IAM user.
+   2.it has also a credentils and permission required to access to the aws services in the server.
+
+**IAM policies:-
+   1.it define permission for an action regardless of that method that you can use to perform the operation.
+   2.an policy is an object in AWS where associate with an entity or resources define their permission.
+
+
+**LIMITATIONS:-
+    1.IAM user limit is 5000 per aws account you can add upto 10 users at one time.
+    2.you are also limited to 300 groups per aws account.
+    3.you are limited to 1000 IAM roles under aws account.
+    4.default limit of managed pollicies attached to an IAM role and IAM user is 10.
+    5.IAM user can be a member of 10 groups.
+    6.we can have two access keys (max) to an IAM user.
+  
+**FEATURES:-
+   1.User Management:
+       IAM allows you to create, manage, and delete users in your AWS account. You can also assign individual security credentials, 
+       such as access keys and passwords, to these users.
+
+   2.Group Management: 
+       IAM allows you to create and manage groups of users in your AWS account. You can assign permissions to these groups and make
+       it easier to manage access for multiple users at once.
+
+   3.Policy Management: 
+       IAM allows you to create and manage policies that define the permissions for users and groups to access AWS resources. These 
+       policies can be used to grant or deny permissions to specific actions or resources.
+
+   4.Multifactor Authentication:
+       IAM allows you to require users to authenticate using multiple factors, such as a password and a security token, to provide an 
+       extra layer of security.
+ 
+   5.Role-Based Access Control: 
+      IAM allows you to create and manage roles that define the permissions for AWS services and resources. This allows you to grant
+      temporary access to specific resources to users, without giving them permanent access.
+
+   6.Integration with AWS Services: 
+      IAM integrates with other AWS services, such as AWS CloudTrail and AWS Key Management Service, to provide a more comprehensiv   e 
+      security solution.
+   
+**ARN-amazon resonance image:-
+
+=====================================================================================================================================
+
+**S3 SERVICE-(simple storage service):-
+ 
+**difference between block storage and object storage:-
+
+1.Block storage:-1.Block storage is suitable for transactional databases,random read/write loads and structured database storage.
+                 2.In block storage,the block storage divides the data into a evenly small blocks and then it is stored in a block
+                   storage evenly in a sized blocks.a file can be split into a evenly sized blocks before it is stored.
+                 3.Data blocks stored in block storage would not contain metadata.
+                 4.Block storage only keep the address (index) where the data blocks are stored,it does not care what is in that
+                   block just how to retrive it when required.
+
+2.Object storage:-1.Object storage can stores a file whole means it does not divide the file into a blocks.
+                  2.In object storage an object is...1.the file/data itselt
+                                                     2.its metadata
+                                                     3.object global unique ID
+                  3.The object global unique ID is a unique identifier for the object (can be the object name itself) and it must 
+                    be unique such that it can be retrieved disregarding where its physical storage location is
+                  4.Object storage cannot be mounted as a drive.
+                  5.example:-dropbox,aws s3,facebook,etc.
+
+
+**simple storage service:-
+     1.it is a cloud-based object oriented service which is provided by amazon aws for storing any form of data and retriving the 
+       data anytime from anywhere on the intenet.
+     2.an S3 bucket provides a simple and scalable solution for storing and retrieving data in the cloud.
+     3.S3 is widely used by businesses of all sizes to store and manage large amounts of data, such as media files,backups,and log 
+       files,as well as for hosting static websites and application data.
+     4.we can not install operating system on s3.
+     5.max capacity of bucket is upto 5TB.
+     6.bucket ownership is non-transferable.
+     7.we can create upto 100 buckets per account.(may expand on request to aws)
+ 
+**key point about s3 bucket:-
+    1.Object Storage: 
+       S3 is an object storage service, which means that it is optimized for storing large,unstructured data such as photos,videos,and
+       log files.
+
+    2.Scalability:
+       S3 is designed to be highly scalable and can store an unlimited number of objects.
+
+    3.Security:
+       S3 provides a range of security features, such as server-side encryption and access control policies, to help protect your data.
+
+    4.Durability: 
+       S3 is designed for 99.999999999% (11 nines) durability, which means that your data is highly protected against data loss.
+
+    5.Performance:
+       S3 provides high performance and low latency for accessing your data, making it suitable for a wide range of use cases.
+
+    6.Pricing: 
+       S3 pricing is based on the amount of data stored, data transfer, and requests made to the service.
+
+    7.Integration:
+       S3 integrates with a wide range of AWS services, as well as third-party tools and services, making it a versatile storage 
+        solution for many different applications.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**types of S3 storage classes:-
+      1.amazon s3 standard
+      2.amazon s3 standard infrequent access -IA
+      3.amazon s3 standard intellegent tiering
+      4.amazon s3 one-zone IA acess
+      5.amazon glacier
+      6.amazon s3 glacier deep archieve
+
+**1.amazon s3 standard:-
+     1.it offers high durability,availability and performance object storage for frequently access data.
+     2.durability is 99.999999999%
+     3.designed for 99.99% availability over a given year
+     4.support ssl for data intransit and encryption of data at rest.
+     5.the storage cost for the object is fairy high,but there is very less charge for accessing the object.
+     6.largest object that can be uploaded in a a single PUT is 5GB.
+     
+**2.amazon s3 standard infrequent access-IA:-
+     1.it is data that is accessed less frequently but requires rapid access which needed.
+     2.the storage cost is much cheaper than s3 standard,almost half tha price.but you are charged more heavily
+       for accessing your objects.
+     3.durability is 99.99999999%
+     4.resilent against events that impacts on entire AZ.
+     5.availability is 99.99 in year
+     6.support ssl for data in transit and encryption of data at rest.
+     7.data that is deleted from s3-IA within 30 days will be charged for a last 30 days.
+     8.backed with amazon s3 service level agreement for availability.
+
+**3.amazon s3 standard intellegent tiering.
+     1.the s3 intellegent tiering storage class is designed to optimized cost by automatic moving data to the most
+       cost-effective access-tier.
+     2.it works by storing object in two access tier.
+     3.if an object in frequent tier is accessd,it is automatically moved back to frequent access tier.
+     4.there are no retrival fees when using the s3 intelligent tiering storage class and no additional tiering fee
+       when objects are moved between access tier.
+     5.same low latency and high performance of s3 standard.  
+     6.object less than 128kb cannot move to IA.
+     7.durability is 99.999999999%
+     8.availability is 99.99%
+
+**4.amazon s3 one-zone IA access:-
+     1.s3 on-zone-IA is for data that access less frequently,but requires repid access when needed.
+     2.data store in single AZ.
+     3.ideal for those who want lower cost option of IA-data.
+     4.it is good storing secondary backup copies on one-premise data or easily recreatable data.
+     5.you can use s3 lifecycle policies.
+     6.durability is 99.999999999%
+     7.availability is 99.5%
+     8.because s3-one zone access stores data in a single AZ,data stored in this storage class will be cost in event
+       of AZ desruction.
+    
+**5.amazon glacier:-
+     1.s3 glacier is a secure,durable low cost storage class for data archiving.
+     2.to keep cost low yet suitable for varing needs,s3 glacier provides these retrieval option that range from a few
+       minutes to hours.
+     3.you can upload object directly to glacier or use lifecycle policies.
+     4.durablility is 99.999999999%
+     5.data is resilent in event of one entire AZ destruction.
+     6.you can retrive 10GB of your amazon s3 glacier data per month for free with free tier account.
+     
+**6.amazon s3 glacier deep archiver:-
+     1.amazon s3 glacier deep archiver is amazon s3 cheapest storage.
+     2.design to retain data for long period eg.10years
+     3.all objects stored in s3 glacier deep archieve are replicated and stored accross atleast three grographical dispered AZ.
+     4.durability is 99.999999999.
+     5.ideal alternative to magnetic tape librances.
+     6.retrival time within 12 hours.
+     7.storage cost is upto 75% less than for the existing s3 glacier storage class.
+     8.availability is 99.9%
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+**Bucket versioning:_
+   1.Bucket versioning in s3 sub-resources is used to protect the data/object from accidental deletation and overwrites.
+   2.versioning can also be used for data retrieve and archieve.
+   3.once you enable the versioning on a bucket it cannot be disabled,however it can only be suspended.
+   4.when enabled it can protect the existing and newly updated data and maintain their versions as they are updated.
+   5.when versioning is enabled and you try to delete an object, a delete marker is placed on the object.
+   6.you can still view the deleted object and the delete marker.
+   7.if you reconsider deleting the objects,you can delete the "delete marker" and the object will be available again.
+   8.you can use versioning with s3 lifecycle policies to delete older version or you can move them to cheaper s3 storage.
+   9.versioning applied to all objects in bucket and not partially applied.
+
+
+**MFA(multi factor authentification):-
+   1.multi factor authentification is a versioning capacity that adds extra layer of security in your account. 
+   2.this adds another layes of security for the following
+       a)changing the bucket versioning state.
+       b)permanently delete an object version.
+   3.MFA delete requires
+       a)your security credentials
+       b)the code displayed on an approved physical or s/w based authenticator device.
+
+
+**replica in s3:-
+   1.In Amazon S3 (Simple Storage Service), a replica refers to a copy of an object that is stored in a different location than the 
+     original object.Replicas are created to provide data redundancy and increase data availability.
+   2.When you enable versioning on an S3 bucket, each time an object is modified or deleted, a new version of the object is created.
+     By default,each version of the object is stored in the same region as the original object. However, you can configure S3 to 
+     automatically replicate the object to a different region or to a different S3 bucket in the same or a different AWS account.
+   3.Replication can be configured using the Amazon S3 Replication feature, which allows you to replicate objects in near-real-time.
+     Replication is useful for disaster recovery scenarios and for distributing data across multiple regions for faster access by 
+     users in different geographic locations.
+
+
+**static web-hosting:-
+   1.Static web hosting in Amazon S3 (Simple Storage Service) allows you to host a static website in an S3 bucket. A static website
+     is a website that is made up of HTML, CSS, JavaScript, and other static files that are served directly to the browser without any
+     server-side processing.
+   2.S3 provides static web hosting for simple, low-traffic websites that don't require server-side processing. It is an affordable and
+     scalable solution for hosting static websites, and it also provides high availability and durability for your website files.
+   3.static web-hosting is a serverless hosting generally developers use these service to host their website serverlessly means without 
+     server-side proccessing.it is affordable and scalable solutin for hosting static website and its low traffic website provides high 
+     availability and durablility to website.
+
+**S3 multipart upload:-
+   1.it is used to upload object in parts.
+   2.it can be upload independently and in parallel, in any order.
+   3.it is recommended for object sizes of 100MB or larger.
+   4.you must use it for object larger than 5GB.
+   5.this is done through s3 multipart API.
+
+
+**S3 bucket naming rules:-
+   1.s3 bucket names are globally unique across all regions.
+   2.bucket name cannot be change after created.
+   3.if a bucket is deleted,its name becomes available again to you or other account to use.  
+   4.bucket names must be atleast 3 and no more than 63 characters long.
+   5.bucket name are part of URL used to access a bucket.
+   6.bucket name must be a series of one or more labels.
+   7.bucket name should not be IP address.
+   8.each label should start and end with a lowercase lettar or a number.
+
+
+**S3 bucket objects:-
+   1.an object size stored in an S3 bucket can be a byte to 5TB.
+   2.each object is stored and retrieve by a unique key (ID or more).
+   3.an object in aws s3 is uniquely identified and addressed through
+           a)service endpoint
+           b)object name
+           c)object key
+           d)optionly object-version
+   4.object stored in s3-bucket in a region will never leave that region unless you specially move them to another region
+   5.a owner can give the access to another user to store the files in a bucket.
+   6.you can grant s3 bucket/object permission to
+           a)individual user
+           b)aws account
+           c)make resource public
+           d)to all authenticate user
+
+
+**features:-
+   1.we can add server side encryption.
+   2.we can add also bucket policy but this is a resource based policy.
+   3.versioning
+   4.static web service
+   5.CORS-cross origine access
+   6.cross region replication-----high availability.
+  
+=============================================================================================================================
+
+**VPC (VIRTUAL PRIVATE CLOUD):-
+
+**networking: -
+    it is interconnected computing device that can exchange data and share resources within a network.
+
+  ipv4                        ipv6                    mac address 
+  32 bit                      128 bit                 48 bit
+
+
+ 11111111          11111111           11111111         11111111
+   255               255                255              255
+
+
+     1       1        1        1        1        1        1        1
+    2^7     2^6      2^5      2^4      2^3      2^2      2^1      2^0
+    128     64       32       16        8        4        2        1
+
+
+1.we can denote host by------0
+2.we can denote network by---1
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+**CIDR:(classless inter-Domain routing):-
+      it is an IP addressing scheme that improves the allocation of IP addresses. It replaces the old system based on classes
+  A, B, and C. This scheme also helped greatly extend the life of IPv4 as well as slow the growth of routing tables.
+
+
+**main reason of CIDR:-  
+    The problem would commonly occur when an organization required more than 254 host machines and therefore would no longer fall
+    into class C but rather class B. This means that the organization would use a class B license even though they had far less 
+    than 65,535 hosts. Therefore if an organization only required 2,500 hosts, they would be wasting about 63,000 hosts by holding
+    a class B license which would greatly decrease the availability of IPv4 addresses unnecessarily.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+**classes:-
+
+  1.Class A -- Over 16 million host identifiers--- 0-126------(N/8)----N.H.H.H------(N.256.256.256)---256*256*256
+  2.Class B -- 65,535 host identifiers------------ 128-191----(N/16)---N.N.H.H------(N.N.256.256)-----256*256
+  3.Class C -- 254 host identifiers----------------192-223----(N/24)---N.N.N.H------(N.N.N.256)-------256
+
+**127 is the loopback ip (system IP):-
+    1.The IP address range 127.0.0.0/8 is reserved for loopback addresses, which means that any traffic sent to these addresses 
+      is looped back to the same device. In other words, the loopback address allows a device to communicate with itself.
+    2.The most commonly used loopback address is 127.0.0.1, which is also known as the "localhost." When you type "localhost" 
+      into your web browser, it will resolve to 127.0.0.1, and your browser will communicate with your own device's web server.
+    3.In summary, the use of the 127 class IP is to provide a loopback address for devices to communicate with themselves, and 
+      it is commonly used for testing and debugging network applications.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+**How to calculate host:-
+ 
+   1.class A -----subnet mask ---N.H.H.H/8
+                         host---=2^24
+                                =167777216 hosts (16 million host)
+
+   2.class B -----subnet mask---N.N.H.H/16
+                         host--=2^16
+                               =65536 hosts
+ 
+   3.class C ----subnet mask----N.N.N.H/24
+                        host---=2^8
+                               =256 hosts
+
+
+**example:-
+
+1.192.168.0.44/19
+  
+ 111111111    111111111    11100000     00000000
+
+
+  subnetmask--------255.255.224.0
+  network---------- 2^3=8
+  useful host------ 2^13-2=8190
+
+
+
+2.10.0.0.5/28
+
+  11111111    11111111     11111111    11110000
+
+  subnetmask----------255.255.255.240
+  network-------------2^4=16
+  useful host---------2^4-2=14
+
+
+**because 1st IP is -----network ID
+          last IP is ----broadcast ID
+
+  it is used for special purposes....
+
+--------------------------------------------------------------------------------------------------
+
+**find out the network ID
+
+  1.115.10.0.15
+  
+    subnetmask---------255.0.0.0
+    network ID---------115.0.0.0
+    broadcast ID-------115.255.255.255
+
+  2.196.10.10.0
+   
+    subnetmask--------255.255.255.0
+    network ID--------196.10.10.0
+    broadcast ID------196.10.10.255
+
+  3.160.10.20.10
+
+    subnetmask-------255.255.0.0
+    network ID-------160.10.0.0
+    broadcast ID-----160.10.255.255
+ 
+ -------------------------------------------------------------------------------------------------
+
+**convert these IP into binary form
+
+ 1.192.168.37.200
+    
+    128    64    32     16     8     4     2     1
+     
+    1      1     0      0      0     0     0     0 --------------192
+    1      0     1      0      1     0     0     0 --------------168
+    0      0     1      0      0     1     0     1 --------------37
+    1      1     0      0      1     0     0     0 --------------200
+
+
+ 1100000000   10101000   00100101  11001000 -------binary form of IP
+
+-----------------------------------------------------------------------------------------------------
+
+**some exmples to find network,netmask,host,broadcast id
+
+ 1.192.168.0.0/19
+  
+   11111111    11111111    11100000    00000000   
+
+    subnetmask------- 255.255.224.0
+    networks--------- 2^3=8
+    host bit--------- 2^13-2=8190
+    broadcast ID------192.168.31.255/19
+
+  1st subnet:-192.168.0.0/19  
+  2nd subnet:-192.168.32.0/19
+  3rd subent:-192.168.64.0/19
+
+  
+2.10.0.0.0/26
+
+  11111111   11111111    111111111   11000000
+
+    subnetmask------- 255.255.255.192
+    network ID--------10.0.0.0
+    networks--------- 2^2=4
+    host bit--------- 2^6-2=62
+    broadcast ID------10.0.0.63/26
+
+  1st subnet:-10.0.0.0/26
+  2nd subnet:-10.0.0.64/26
+  3rd subent:-10.0.0.128/26
+  
+
+3.172.25.0.5/17
+
+  11111111   111111111   10000000   00000000
+
+    subnetmask-------255.255.128.0
+    network ID-------172.25.0.0
+    networks---------2^1=2
+    host bit---------2^13-2=32766
+    broadcast id-----172.25.127.255/17
+
+ 1st subnet:-172.25.0.0/17
+ 2nd subnet:-172.25.128.0/17
+ 
+------------------------------------------------------------------------------------------------------------------------
+
+**private IP ranges
+
+1.class A -----10.0.0.0  -------10.255.255.255
+2.class B -----172.16.0.0 ------172.16.255.255
+3.class C -----192.168.0.0 -----192.168.255.255
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**subnetting concept:-
+
+*what is subnet
+   1.it is a network within a network. 
+   2.a subnet is a range of IP addresses in our vpc.
+   3.you can attach aws resources such as ec2 instances and RDS instances to subnet.
+   4.you can create a subnet to group instances together according to your security and operation needed.
+ 
+
+*what is switch:-
+    with the help of switch we can connect two network within a network with same network IDs.
+
+*what is router:-
+    with the help of router we can connect two different networks.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**VPC(virtual private cloud):-
+
+  virtual private cloud is a virtual network that closely resembles a traditional networking that you operate in your own
+  datacentre,with the benifits of using the scalable infrastructure of aws.
+                                              or
+  VPC stands for Virtual Private Cloud. It is a cloud computing service provided by Amazon Web Services (AWS) that allows 
+  users to create a virtual private network (VPN) in the cloud.
+
+  1.amazon vpc provide logically isolated area from other virtual network in aws cloud where we can launch aws resources
+  2.A VPC allows users to define a virtual network topology, including subnets, routing tables, and network gateways, in a 
+    private and isolated virtual network within the AWS cloud. 
+  3.This allows users to launch and manage resources, such as instances and databases, in a secure and isolated manner.
+  4.max 5 vpcs can be created and 200 subnets in 1vpc.
+  5.we can allocate max 5 elastic IP.
+  6.once we created vpc,DHCP,NACL and security group will be automatically created.
+  7.all vpc are isolated to each other.
+  8.if you are pearing your vpc to other in that case your and other client have different CIDR block.otherwire they will
+    not be pearing with each other.
+  9.subnet is availability zone specific.
+ 10.vpc is region specific.
+ 11.once a vpc is created,you cannot change its CIDR block range.
+ 12.if you need different CIDR size,create a new vpc.
+ 13.the different subents within a vpc cannot overlap.
+ 14.you can however expand your vpc CIDR by adding new/extra IP address ranges.
+ 
+  Overall, VPCs provide a secure and flexible way to host resources in the cloud while maintaining control over the
+  network topology and access to those resources.
+-----------------------------------------------------------------------------------------------------------------
+
+**TYPES of VPC:-
+  
+    1.default vpc
+    2.custom vpc
+
+
+A).default vpc:-1.it is created default in each region when an aws account is created.
+                2.Has default CIDR,security group,NACL and route table settings.
+                3.Has an internet getway default.
+
+B).custom  vpc:-1.it is a vpc on aws account owner creates.
+                2.aws user creating the custom vpc can decide the CIDR.
+                3.has its own security group,network acl and route tables.
+                4.does not have a internet getway by default,one needs to be created if needed.
+
+--------------------------------------------------------------------------------------------------------------------
+
+**if you have create a vpc the 4 steps you should follow:-
+
+1.create a vpc (10.0.0.0/18)
+
+2.create a subnet
+     a)10.0.0.0/20  ----------public subnet
+     b)10.0.16.0/20 ----------public subnet
+     c)10.0.32.0/20 ----------private subnet
+     d)10.0.48.0/20 ----------private subnet
+
+3.create a internet getway and attach to a vpc
+
+4.create a nat-getway and attach to private route-table
+    
+5.create a route-table
+     a)my-public-route-table
+         1.add subnet public subnet
+         2.attach iGW
+     b)my-private-route-table
+         1.add subnet private subnet
+         2.attach nat-getway
+
+6.create a instances
+     1.bastion-host-server (public server)
+     2.my-web-application-1 (private server)
+
+7.login with putty to access private server
+     1.vim mayur.pem
+     2.chmod 400 mayur.pem
+     3.ls -l mayur.pem
+     4.ssh -i (key-name)(hostname)@(private ip of private server0
+----------------------------------------------------------------------------------------------------------------------------
+
+**USE of bastion host-server:-
+    1.A bastion host server acts as a gateway to a private network or server that is not directly accessible from the internet.
+    2.It provides a single entry point for users who need to access specific resources on the private network.
+    3.All inbound traffic to the private network is routed through the bastion host server, which allows administrators
+      to control and monitor access to the private network.
+    4.It enhances security by restricting access to sensitive systems and data to only authorized users.
+    5.It enables organizations to better control user activity and quickly detect and respond to potential security threats.
+    6.Using a bastion host server can reduce the risk of unauthorized access, data breaches, and other security incidents.
+    7.Overall, a bastion host server is an important tool for securing access to private networks and resources.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+**components of vpc:-
+
+  A).public subnet:-1.In public subnet the internet getway should be attach.they have known the route of internet getway.
+                    2.if a subnet traffic is routed to an internet getway,the subnet is known as public subnet.
+                    3.the instance in public subnet can send outbound traffic directly to the internet.
+                    4.if you want your instance on public subent to communicate with the internet over IPv4.it must have
+                      a public IPv4 address on elastic IP address.    
+
+  B).private subnet:-1.In private subnet the internet getway should not be attached.
+                     2.if a subnet does not have a route to internet getway the subnet known as private subnet.
+                     3.when you create a vpc,you must specify an IPv4 CIDR block for VPC.
+                     4.the allowed block size is between /16 to /24 netmask.
+                     5.the first four and last IP address of subnet cannot be assigned.
+                     6.the instance in a private subnet can not send outbound traffic directly to the internet.
+          
+                              1).10.0.0.0 ------------ network address
+                              2).10.0.0.1 ------------ reserved by aws for vpc route
+                              3).10.0.0.2 ------------ reserved by aws for the IP address of DNS server
+                              4).10.0.0.3 ------------ reserved for future use
+                              5).10.0.0.255 ---------- brodcast address
+                          
+                     Note:-aws do not support brodcast in a vpc but reserve this 5 address.
+             
+                                 =65,536-5           ,    =256-5
+                                 =65,531             ,    =251
+
+-----------------------------------------------------------------------------------------------------------------------
+     
+**ROUTE TABLE:-
+   
+  1.it is a central routing function.
+  2.it connects the different availability zone together and connects VPC to internet getway.
+  3.you can have upto 200 routes table per vpc 
+  4.you can have upto 50 routes entries per route table.
+  5.each subnet must be associated with only one route table at any given time.
+  6.if you do not specify a subent to route table association,the subnet will be associates with the default VPC route
+    table
+  7.you can also edit the main route table if you need,but you cannot delete main route table.
+  8.however you can make a custom route table manually become the main route table then you can delete the former main,
+    as it is no longer a main route table.
+  9.you can associate multiple subnets with the same route table.
+
+----------------------------------------------------------------------------------------------------------------------
+**what is the purpose of route table:-
+  
+   1.main purpose of route table is to help routers make effective routing decisions.
+   2.whenever a packet is sent through a router to be forwarded to a host on another network,the router consults the 
+     routing table to find the IP address of the destination device and the best path to reach it.
+------------------------------------------------------------------------------------------------------------------------
+                           
+**IMPLIED ROUTES:-
+  
+  1.it is nothing but the logical routes.
+  2.it behaves like logical routes but doesnt exist actually.
+  3.but they have the property of VPCs.
+
+------------------------------------------------------------------------------------------------------------------------  
+
+**INTERNET GATEWAY:-
+  
+  1.it is kind of router.
+  2.it also a virtual router that connects VPC to a internet.
+  3.if you create a new VPC then you must attach the internet getway in order to access internet.
+  4.ensure that your subnets route table points to the internet getway.
+  5.it performs NAT between your private and public IPv4 address.
+  6.it supports both IPv4 and IPv6.
+  
+------------------------------------------------------------------------------------------------------------------------
+
+**NAT GATEWAY:-(network address translation)
+
+  1.you can use network translation getway to enable instances in a private subnet to connect to the internet or other 
+    aws services.but prevent internet from initialing a connection with those instances.
+  2.you are charged for creating and using a NAT gateway in your account NAT gateway hourly usage and data processing 
+    rates apply amazon ec2 charges for data transfer also apply
+  3.to create a NAT getway you must specify the public subnet in which the NAT gateway should recide.
+  4.you must also specify an elastic IP address to associate with NAT getway when you create it.
+  5.no need to assign public IP address to your private instance.
+  6.after you have created a NAT getway you must update the route table associated with one or more of your private 
+    subnets to point internet bound traffic to gateway.this enables instance in your private subnet to communicate with
+    internet.
+  7.deleting a NAT gateway,disaciciates a elastic IP address but does not release the address from your account.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**network acl:-
+ 
+  1.it is a function performed on the implied router
+  2.NACL is an optional layer of security for your VPC that cuts as a firewall for controlling traffic in and out of one
+    or more subnets.
+  3.your VPC automatically comes with a  modifiable default network acl by default it allows all inbound and outbound 
+    ipv4 traffic and applicable ipv6 traffic.
+  4.you can create a custom network acl and associate it with a subent by default,each custom network acl denies all 
+    inbound and outbound traffic untill you add rules.
+  5.each subnet in your VPC must be associate with a network acl if you dont explicity associate a subnet is automaticaly
+    associate with the default network acl
+  6.it functions at subnet level.
+  7.NACL are stateless,outbound traffic for an allowed inbound traffic,must be explicity allowed too.
+  8.you can have permit and deny rules in a nacl
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**security group:-
+   
+   1.it is a virtual firewall works at ENI level.
+   2.upto 5 security groups per EC2 instance interface can be applied.
+   3.can only have permit rules,cannot have deny rule.
+   4.stateful.return traffic,of allowed inbound traffic is allowed,even if there are no rules to allow it.
+   5.if you allow port in inbound traffic then you can not attach separate port in outbound traffic the port will be 
+     automatically allow both inbound and outbound traffic.
+
+**Base points:-
+
+   1.it is operate at instance level.
+   2.support allows rules only.
+   3.stateful,return traffic is automatically allowed.
+   4.applies to an instance only
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**Differentiate between security group and NACL:-
+
+       security group                                        NACL
+ 
+  1.operate at instance level.                 -----    1.operate at subnet level.
+  2.support allows rules only.                 -----    2.it permits allow as well as deny rules.
+  3.stateful,return traffic is automatically   -----    3.stateless,return traffic must be explicity allowed by 
+    allowed.                                              rules.
+  4.applies to an instance only.               -----    4.applies to all instance in the subnet.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+**VPC peering:-
+
+  1.a vpc pearing connection is a networking connection between two vpc that enables you to route traffic between them
+    using private IPv4 addresses or IPv6 address.
+  2.instance in either vpc can communicate with each other as if they are within the same network.
+  3.you can create a vpc pearing connection between you own vpc or with a vpc in another aws account.the vpc can be in 
+    different region.
+
+**transitive peering:-
+
+  1.Transitive peering refers to the ability for two or more peering partners to exchange routing information with each 
+    other and then extend that routing information to other peering partners that they have in common,even if those partners
+    do not have a direct peering relationship.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+**VPC endpoint:-
+
+   1.A vpc endpoint enables you to privately connect your vpc to supported aws services instance in your vpc do not require
+     public IP addresses to communicate with resources in the service.
+   2.there are two types of vpc enpoints
+       a)interface
+       b)getway
+
+
+**Differerence between interface and getway:-
+
+   1.Interface endpoints use an elastic network interface (ENI) as an entry point for traffic to the AWS service, 
+     while gateway endpoints use a VPC endpoint gateway.
+
+   2.Interface endpoints are used for services that have a private IP address within the VPC, such as Amazon S3 and Amazon DynamoDB,
+     while gateway endpoints are used for services that have a public IP address, such as Amazon Kinesis and Amazon CloudWatch.
+
+   3.Interface endpoints are highly available and scalable,with support for multiple ENIs and multiple IP addresses per ENI,
+     while gateway endpoints are typically limited to a single endpoint per VPC.
+
+   4.Interface endpoints are associated with a subnet and require a route table entry to direct traffic to the endpoint,
+     while gateway endpoints are associated with a VPC and do not require any additional configuration.
+
+   5.Interface endpoints support endpoint policies, which allow you to control access to the endpoint,
+     while gateway endpoints do not support endpoint policies.
+ 
+
+**steps:-
+   1.create a vpc (10.0.0.0/16)
+
+   2.create a subnet
+        a)public subnet (10.0.0.0/24) 
+        b)private subnet (10.0.1.0/24)
+
+   3.create a internet getway / attach to a vpc
+
+   4.create a route table
+        a)my-public-routetable
+             1.add subnet
+             2.add route/internet getway
+        b)my-private-routetable
+
+   5.create a endpoint
+       a)name-
+       b)aws services
+       c)service add-amazon s3
+       d)select vpc
+       e)route table-my-private-routetable
+       f)create a endpoint
+   
+   6.create a instances
+       a)bastion-host-server (public server)
+       b)my-web-application (private server)
+
+   7.login with putty on bastion-host-sever
+       a)vim mayur.pem
+       b)chmod 400 mayur.pem
+       c)ls -l mayur.pem
+       d)ssh -i (key-name)(hostname)@(private ip of private server)
+       e)aws configure
+       f)create access key or attach a role to the private instance
+       g)aws s3 ls
+
+===============================================================================================================================
+
+**Database:-
+    it is a collection of data systematic collection of data but in a organise form called as database.databases support
+    storage and manipulation of data.
+ eg.facebook,telecom companies,amazon.com
+
+**what is DBMS:-
+    it is a collecton of programme which enables its users to access database,manipulate data,reporting/representation of data.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+**RDBS(relational database service):-part1
+
+   1.it is datastructure that allows you to link information from different tables,or different types of data bucket.
+   2.tables are related to each other.
+   3.all fields must be filled.
+   4.best suited for OLTP (online transaction processing)
+   5.relational databases are mysql,oracle DBMS,IBM database
+   6.a row of a table is also called record.it contain information fo each individual entry in the table.
+   7.a schema is  used to define tables,coloums,index and relation between tables.
+   8.relational database are usually used in enterprise application/scenario.
+   9.exception mysql which is used for web application.
+  10.cannot scale out horizontally.it is a vertically scalable.
+  11.virtually all relational DB uses SQL.
+  12.scale out means adding instance
+  13.scale in means terminate the instances.
+   
+**steps to create database:-
+   1.create a database
+   2.flavour------------mariadb
+   3.version------------default
+   4.template-----------free tier
+   5.DB instance--------(give the name)
+   6.master name--------(user name)
+   7.master passwd------(password)
+   8.instance config----db.t3.micro
+   9.storage
+  10.connectivity-------connect to EC2 instance.
+  11.EC2 instance-------(select)
+  12.public acceess-----no
+  13.create new security group
+  14.create database.
+                           
+  then
+  1.create a EC2  
+  2.ubuntu
+  3.instance storage--t2.micro
+  4.add security rule----mysql aurora--3306
+------------------------------------------------------------------------------------------------------------------
+
+**NOsql or non-relational database:-
+  
+  1.non-relational database is used to store the data without a structured mechanism to link data from different
+    tables to one another.
+  2.require low cost hardware.
+  3.much faster performance (read/write) compared to relational database.
+  4.horizontal scaling is possible.
+  5.never provide table with flat fixed coloumn records.it means schema free.  
+  6.best suited for online analytical processing.
+  7.examples:-NOsql database-mongoDB,casantra,postgreSQL,etc
+
+**types of NOsql databases:-
+      1.coloumn database (casantra,HB)
+      2.document database (mango DB,raven DB,couch DB)
+      3.key-value database (dynamo DB,tokyo cabinet)
+      4.graph based database (flock DB,neo4J)
+
+**1.coloumnar database:-
+    1.a coloumnar database is a DBMS that store data in coloumn instead of rows.
+    2.in a coloumnar database all the coloumn 1 values are physically together followed by all the coloumn 2 values.
+    3.benefit is that because a coloumn-based DBMS is self indexing,it uses less disk space that a RDBS containing 
+      tha same data.
+    4.it easily perform operation like minimum,maximnum and average.
+   
+**2.documnet database:-
+    1.document database make it easier for developers to store and quering data in a DB by using same document model
+      format they used in their application code.
+    2.document database are efficient for storing catalogue.
+    3.store semistructure data as document typically in JSON or XML format.
+    4.a document database ia a great choice for contain management application such as blogs and videos platforms.
+ 
+**3.key-values database:-
+    1.a key vlaue DB is a simple DB that used an associate array as a fundamental model where each key is associate
+      with one and only one value in a collection.
+    2.it allows horizontal scaling.
+ 
+**graph basa database:-
+    1.a graph base database is basically a collection of nodels and edges each node represent an entity and each edge
+      represent a connection or relationship between two nodes. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+**RDBS:-part2
+    
+ In an aws fully managed relational DB engine service where aws is resposible for
+   1.security and patching
+   2.automated backups
+   3.software updates for the DB
+   4.if selected,multi-AZ with synchronous replication between the active and standby DB
+   5.by default,every DB has weekly maintance window.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+**setting managed by user:-
+   1.managing DB setting.
+   2.creating relational database schema.
+   3.database performance tunning.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+**relational DB engine options:-
+   1.mssql
+   2.mysql
+   3.oracle
+   4.aws aurora---high throughout
+   5.postgresql---its highly reliable DB
+   6.mariadb------mysql compatible 64TBDB
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**there are two licensing options:-
+   1.BYOL--bring your own license.
+   2.license from aws on hourly basis.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**RDS limits:-
+   1.upto 40DB instances per account.
+   2.10 of this 40 can be oracle or ms-sql server under license included models.
+   3.under BYOL model,all 40 can be any DB engines you need.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**RDS instance storage:-
+   1.amazon RDS use EBS volumes (not instance store) for DB and logs storage.
+       a)general purpose:-use for DB workloads with moderate input output requirement.
+           limit:-1.min-20GB
+                  2.max-16000GB
+        
+       b)provisional IOPS RDS storage:-use for high performance OLTP workloads.
+           limit:-1.min-100GB
+                  2.max-16000GB
+       
+    OLTP---relational DB uses.
+    OLAP---non-relational DB uses. 
+
+------------------------------------------------------------------------------------------------------------------------
+
+**template available in RDS:-
+   1.production:-use default for high availability and fast,consistent performance.
+   
+   2.dev/test:-this instance is intended for development use outside of a production environment.
+   
+   3.free tier:-use free tier to develop new app test existing app or gain hands on exp. with amazon RDS.
+
+------------------------------------------------------------------------------------------------------------------------
+
+**DB instance size(classes):-
+   1.standard class-(included m class):-
+       maximum 96vCPU , 384GB ram , EBS:-14000mbps
+
+   2.memory optimized class-(included r and x):-
+       maximum 96vCPU , 768GB ram , EBS:-14000mbps
+   
+   3.burstable class -(include t classses):-
+       maximum 8vcpu , 32GB ram , EBS:-15000mbps
+
+--------------------------------------------------------------------------------------------------------------------------
+  
+**concept of multi AZ in RDS:-
+  
+**what is multi-AZ in RDS:-
+   
+   1.we can select multi-AZ option during RDS DB instance launch.
+   2.if we not select these option our DB should by stand alone not create stand by DB.
+   3.we can create standby to provide high availability and fault tolerance.
+   4.if primary DB not work we can access standby.
+   5.RDS creates standby instance in different Availability zone but in same region and configure "synchronous replication" 
+     between the primary and standby.
+   6."sychronous" means if we udpdate any data entry in primary instance these data also update in standby instance called as
+      synchronous.
+   7.you can not read/write in standby RDS DB instances.only aws can read/write in standby RDS instances.
+   8.also we can not choose AZ where we can create a standby DB instances.
+   9.we can however view which AZ selected after the standby created.
+  10.depending on instance class,it may take 1 to few minutes to failure to the standby instance.
+  11.if suppose primary is failure by any reason in that condition our standby instance set as primary,means we can read/write
+     the standby instance.
+  12.and when the primary instance correct or work properly in that condition our primary instance should be primary and standby
+     instance is set to standby mode.
+  13.aws recommends the use of provisioned IOPS instances for multi-AZ RDS instances.
+  14.why aws recommends provisioned IOPS because it provides high availability and high performance and manages workloads.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+**there are two methods to backup and restore our RDS DB instances:-
+       1.aws RDS automated backup
+       2.use initial manual backup
+ 
+  1.either we can take backup of entire DB instances or just the DB.
+  2.we can cr eate a storage volume snapshot of our entire DB instance.
+  3.automated backups by aws,backup our DB data to multiple AZ to provide for data durability.
+  4.select automated backup in aws console.
+  5.stored in amazon s3.
+  6.multi-AZ automated backups will taken from the standby instances.
+  7.DB instance must be active state for automated backups.
+  8.RDS automatically backup the DB daily by creating a storage volume snapshot of our DB instance (fully daily snapshot)
+    including the DB transaction logs.
+  9.no additional charge for RDS backing up our DB instance.
+ 10.automated backup are deleted when we delete our RDS DB instances.
+ 11.AN outrage occurs if we change the backup retention period form zero to non-zero value or other way around.
+ 12.retention period of automated backup is 7days  (by default) via aws console.
+ 13.aws aurora is an exception its default is one day.
+ 14.via CLI or API , 1 day by default.
+ 15.we can increase it upto 35 days.
+ 
+=====================================================================================================================================
+
+**Database types:-
+
+ A.unstructured data:-
+    1.it is a information that either does not have a pre-defined data model or is not organised in a pre-defined manner.
+    2.unstructured information is tipically text heavy but may contain data such as dates,numbers and facts as well examples include
+      email message,word proccessing ducuments,video,photos,audiofile,presentation webpages.
+    
+ B.semi-structured data:-
+     1.it is a information that does not reside in a relational database but that does have some oraganisational properties that make
+       it easier to analyse eg.XML,JSON.
+    
+ C.structured data:-
+     1.it is a data which is stored in database ina structured form that inclusion a relational database.
+     2.they have a relational key and can be easily mapped into pre-defined field.
+
+**DynamoDB table:-
+     1.a table is a collection of data items.
+     2.like all other DB,dynamodb stores data in tables.
+ 
+**Items:-
+     1.each table contains multiple items.
+     2.An item,is a group of attributes that is uniquely identifiable among all of the other items.
+     3.an item consit of a primary or composite key and a flexible not of attributes.
+
+**Attributes:-
+     1.each item is composed of one or more attributes.
+     2.an attributes consist of all attribute name and a value of a set of value.
+     
+   note:-aggregate size of an item cannot exceed 400KB including key and all attributes.
+
+**Dynamodb:-
+  1.dynamodb allows  low latency read/write access to items ranging from 1 byte to 400KB.
+  2.dynamodb can be used to store pointer to s3 stored objects,or items of sizes larger than 400KB too if needed.
+  3.dynamodb stores data index by a primary key
+     1.you specify the primary key when you create the table.
+     2.each item in the table has a unique identifier or primary key,that distinguisher the item from all of the others in the table.
+  4.the primary key is only required attributes for items in a table. 
+  5.dynamodb tables are schemaless.
+  6.which means that neither the attributes nor their data types need to be defined beforehead.
+  7.each item can have its own distinct attributes.
+
+**dynamodb-read/capacity unit:-
+  1.one read capacity unit requires one strongly consistent read per second or two eventually consistent reads per second for item
+    upto 4KB in size.
+  2.if you need to read an item that is larger tha 4KB,dynamoDB will need be consume additional read capacity units.
+  3.the total number of read capacity units required depends on item size,and whether depends on item size,and whether you want an 
+    eventually consistent or strongly consistent read.
+  
+**write capacity unit:-
+  1.one write capacity unit represents one write per second for an item upto 1KB in size.
+  2.if oyu need to write an item that is larger than 1KB.dynamodb will nedd to consume additional write capacity unit.
+  3.the total no of write capacity unit required depends on the item size.
+
+**DynamoDB DB unit:-
+  1.256 tables per account per region.
+  2.no limits on the size of any table.
+
+======================================================================================================================================
+
+**SNS-(simple notification service):-
+   1.SNS stands for Simple Notification Service and it is a messaging service provided by Amazon Web Services (AWS). 
+   2.SNS enables you to send messages or notifications from the cloud to various subscribed endpoints, such as email addresses,
+     HTTP endpoints,mobile devices, and more.
+   3.You can use SNS to decouple the components of your application by sending messages between them in a reliable and scalable way. 
+   4.For example, you can use SNS to send notifications to your users when a new product is added to your online store or when an  
+     error occurs in your application.
+   5.Overall, SNS provides a simple and cost-effective way to send messages between distributed systems, microservices, and serverless 
+     applications running on AWS.
+   6.sns is a fast,flexible and fully managed push notification service.
+   7.it is a webservice that coordinates and manages the delivery or sending of message to subscribing endpoints or clients.
+   
+======================================================================================================================================
+**SQS-(simple queue service):-
+   1.it works on the pull mechamism.
+   2.sqs is a fast,reliable and fully managed message queue service.
+   3.it is a webservice that gives you access to message queue that store message waiting to be processed.
+   4.it offers reliable,highly scalable,hosted queue for storing messages between servers.
+   5.Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service offered by Amazon Web Services (AWS).
+   6.It enables you to send, store, and receive messages between different software components or distributed systems.
+   7.In simple terms, SQS allows you to decouple the components of your application so they can run independently, without being
+     tightly coupled together.
+   8.This can help to improve the reliability and scalability of your application by isolating different components and ensuring
+     that they can operate independently of each other.
+   9.With SQS, you can send messages between different parts of your application, or even between different applications, without 
+     worrying about the reliability of the underlying network or infrastructure. 
+  10.SQS stores your messages in a distributed queue, making them highly available and durable, so you can be sure that your messages
+     are safe and won't be lost.  
+
+**types of SQS:-
+   1.standard queue 
+   2.FIFO queue
+ 
+*standard queue:-
+  1.high throughout
+  2.at least one delivery
+  3.deplicacys is possible
+  4.best effort ordering.
+  
+*FIFO queue:-
+  1.limited throughout
+  2.exactly one processing
+  3.duplicacy is non possible
+  4.strict ordering
+  5.FIFO are limited to 300 transaction per second (TPS).
+
+**steps to create que:-
+      1.create a queue
+      2.standard queue
+      3.name---------------mysqstopic
+      4.access policy-----basic
+      5.create queue
+     
+      6.subscribe to amazon SNS topic
+      7.send and receive message
+      9.create a message "hello everyone"
+     10.delivery delay-5S
+     11.send message
+     12.poll for message
+     13.click on link
+     14.done.
+
+========================================================================================================================================
+
+**cloud trail:-
+   1.it can continously log our aws account activity.
+   2.cloudTrail provides a record of the actions taken by a user, role, or AWS service in your AWS account, including actions taken 
+     through the AWS Management Console, AWS Command Line Interface (CLI), and AWS SDKs and APIs. 
+   3.CloudTrail captures a log of the API calls made to AWS services, which can be used for security analysis, resource change tracking,
+     and compliance auditing.
+   4.When CloudTrail is enabled, AWS automatically delivers a log file containing the recorded events to an S3 bucket that you specify.
+     You can then use this log file to view and analyze the events in your AWS account. 
+   5.With this information, you can determine who made a specific API call and when it was made.
+
+=========================================================================================================================================
+
+**cloud formation:-
+  1.it is a webserice which is provided by the amazon aws to automate the creation and managing the aws resources using templates.
+  2.A template is a JSON or YAML formatted text file that describes the AWS resources and their properties that you want to create.
+  3.You can use templates to create resources like EC2 instances, S3 buckets, RDS databases, load balancers, and more.
+  4.CloudFormation allows you to manage your infrastructure as code, which means you can version,test,and deploy your infrastructure in a
+    repeatable and consistent manner.
+  5.You can create, update, and delete stacks of resources using the AWS CloudFormation console, AWS CLI, or AWS SDKs.
+  6.By using CloudFormation, you can save time and reduce errors by creating manually instances or other services.
+  7.cloud formation is a service which we can used to setup a infrastructure. 
+
+============================================================================================================================================
+
+**Elastic benstalk:-
+  1.Elastic Beanstalk is a fully managed service provided by Amazon Web Services (AWS) that simplifies the deployment and management of web
+    applications. Elastic Beanstalk automates the deployment, scaling, and monitoring of applications in an Amazon Web Services (AWS)
+    environment.
+  2.Elastic Beanstalk provides a platform for developers to deploy their applications without worrying about the underlying infrastructure. 
+  3.It supports several programming languages such as Java, .NET, PHP, Python, Ruby, and Node.js.
+  4.Elastic Beanstalk also integrates with other AWS services such as Amazon RDS, Amazon S3, Amazon DynamoDB, and Amazon Simple Notification 
+    Service (SNS), making it easy to create complex applications that use multiple services.
+  5.In summary, Elastic Beanstalk is a cloud platform that allows developers to easily deploy and manage their web applications without the 
+    need to manage the underlying infrastructure.because it is a platform as a service model.
+
+=============================================================================================================================================
+
+**AWS lambda:-
+   1.it is a serverless computing.
+   2.it is compute service which we can use to run our code without provisioning and managing the servers.
+   3.with aws lambda,you can run your code for virtually any type of application or backed service all with zero administration.
+   4.With AWS Lambda, you only pay for the compute time that you consume, which makes it a cost-effective solution for building scalable 
+     applications.
+   5.Additionally, AWS Lambda supports a variety of programming languages, making it easy for developers to write their code in the language
+     they are most comfortable with.
+   6.aws lambda run our code on a high availability compute infrastructure.
+   7.aws lambda execute our code when needed and scales automatically from a few request per day to thousands per request.
+   8.we can pay only when our code run.no charge can apply when the code is not running.
+   9.all you need to do only supply your code to lambda in the form of one or more lambda function.
+  10.lambda supports the languages like node JS,python,go,rubby,c#,java,powershell,provided Runtime API (custom runtime).
+  11.AWS Lambda is often used to build serverless applications, which are applications that run in the cloud without requiring 
+     the developer to manage the underlying infrastructure.
+
+
+**How lambda works:-
+    1.first you upload your code to lambda in one or more function.
+    2.then lambda excutes the code 
+    3.after the code is envoked,lambda automatically take care of provisioning and managing required servers.
+  
+
+ **difference between aws lambda and aws EC2
+   
+                aws lambda                                                                 aws EC2
+   1.it is platform as a service model.                                        1.it is a infrastructure as a service model
+   2.it supports only limited languagres like java,python                      2.it has no environment so we can run the code on any
+     ruby,powershell,c#,node JS,go,runtine API                                   languages.
+   3.in lambda,write the code and push the code into AWS                       3.firstly you have to choose the OS and then install the
+     lambda.                                                                     software required and then push your code into EC2
+   4.you cannot log into compute instance choose customized                    4.you can select variety of OS,instance types,networks and
+     os or language platform.                                                    security patches,etc
+   5.pay only when our code runs mean pay only for compute                     5.5.pay-per-second bill
+     services that we consume.                                                                                                                                                                    
+             
+===========================================================================================================================================
+
+**Route 53:-
+   1.amazon route 53 is a highly scalable and available DNS.
+   2.route 53 connect users request to internet application running on aws.
+   3.you can use route 53 to register new domains,transfer existing domains,route traffic for your domains to your aws and external resources
+     and monitor the health of your request.
+   
+**DNS:-(domain name system):-
+   1.it resolve name to IP.
+   2.and resolve also ip to name.
+
+**Route 53 function:-
+   1.DNS management
+   2.traffic management
+   3.availability monitoring
+   4.domain registration
+
+**Route 53 performs three major functions:-
+   1.register a domain
+   2.as a DNS,it routes internet traffic to the resource for your domain.
+   3.check the health of your resource.
+      1.route 53 sends automated request over the internet to a resorce to verify that the server reachable,functional,available.
+      2.also you can choose to receive notification when a resource becomes unavailable and choose to route internet traffic away 
+        from unhealthy resources.
+
+**AWS supports domain:-
+   1.generic top level domain:-
+      (.com , .in , .org , .net)
+  
+   2.geographic top level domain:-
+      (.CN,.IN,.UK,.PK)
+
+**registraing a domain with route 53:-
+   1.you can register a domain with route 53 if the top level domain included in the supported Top level domain list.
+   2.if the TLD is not included,you can't register the domain with route 53.
+
+**Route 53 hosted zone:-
+   1.it is collection of records for a specified domain.
+   2.you create a hosted zone for a domain,and then you create records to tell the domain name system how you want traffic to be
+     routed for that domain.
+   3.basically a hosted zone is a container that hold information about how you want to route traffic for a domain and its subdomain.
+   4.you create a public hosted zone or private hosted zone.
+   5.for each public hosted zone amazon aws route 53 automatic create a nameserver,record,and a start of authority (SOA) record.
+     amazon recommends dont change these record.
+   6.route 53 automatically creates a name server record with same name as your hosted zone.
+   7.you can create a more than one hosted zone with same name and add different routes to each hosted zone.
+   8.route 53 assigns four name servers to every hosted zone.
+   9.the name server are different from each of them.
+
+
+**route 53 default entries for hosted zone:-
+   1.nameserver entry:-
+      contains the unique sets of name server for this hosted zone.
+   2.SOA entry:-
+      contains information about the hosted zone.
+
+
+**Routing policies:-
+   1.simple routing (default)
+   2.failure routing
+   3.geolocation routing
+   4.multivalue routing
+   5.latency based routing
+   6.weighed routing
+   7.geoproximity routing
+
+
+**failover routing:-
+   1.failover routing lets you route traffic to a resource when the resource is healthy.if the main resource is not healthy
+     then route traffic to a different resource.
+   2.the primary and secondary records can route traffic to anything from an amazon s3 bucket that is configured as a website to a 
+     complex tree of records.
+   3.failover routing policy is applicable for public hosted zone only.
+
+**geolocation routing:-
+   1.geolocation routing lets you choose the resource that serves your traffic based on the geographic location of your users i.e the
+     location that DNS queries original form.
+   2.for e.g. you may have presence in europe asia now you want users in the asia to be served in the asia and those in europe to be 
+     served in europe.
+   3.BENIFITS:-1.you can localize your content and present some or all of your website in the language of your users.
+               2.you can specify geographic locations by continent,by country or by state in the united states.
+
+
+**latency based routing:-
+   1.if your application is hosted in multiple amazon EC2 regions,you can improve performance for your users by serving their respose
+     from amazon EC2 region that provide the lowest latency.
+   2.to use latency based routing,you create latency record for your resource in multiple EC2 regions.
+   3.when amazon route 53 reciever a DNS query for your domain or subdomain.
+      1.it determines which amazon EC2 region you have created latency record for
+      2.determines which region gives lowest latency to users.
+      3.then select a latency record for that region.
+   4.you create a latency record for each region.
+
+**weighted routing policy:-
+   1.weighted routing policy lets you all multiple resorce with a single domainname or subdomain name,and choose how much traffic is 
+     routed to each resouce.
+   2.this can be useful for variety of purpose including load balancing,testing new versions of software.
+   3.weights can be assign any number from 1 to 255.
+   4.to configure weighted routing you create records that have same name and type for each or your resource.
+
+**geoproximity routing policy:-
+   1.use when you want to route traffic based on the location of your resorces and optionally shift traffic from resource in one
+     location to resource in another.
+  
+**multivalue answer routing policy:-
+   1.use when you want route 53 to respond to DNS queries with upto eight healthy record selected at random.
+
+==========================================================================================================================================
+
+**cloudfront:-
+   1.it is a webservice that speed up distribution of your static and dynamic web content such as html,css,java,and image files of your 
+     user.
+   2.cloudfront deliverd your content through a worldwide network of datacentre called edgelocation.
+   3.when a user request content that you are serving with cloudfront the request is route to edge location that provide low latency so 
+     that content is delivered with the best possible performance.
+   4.amazon cloudfront is content delivery network that securly delivered data video,app to user with low latency and high speed transfer 
+     network of global edge location.
+   5.if the content is already in the edge location with the lowest latency,cloudfront delivers it immediatly.
+   6.this dramatically reduces the number of networks that your users request must pass through which improves performance.
+   7.if not cloudfront retrieves it from an amazon s3 bucket or an http webserver that you have identified as the source for the definative 
+     version of your content (origin server).
+   8.cloudfront also keeps persistent connection with origin servers so files are fetched from the origin as quickly as possible.
+
+**you can access amazon cloudfront in the following ways:-
+   1.AWS management
+   2.AWS SDKs
+   3.cloudfront API
+   4.AWS command line interface
+
+**cloudfront EDGE location:-
+   1.edge location are not tied to availability zones or regions.
+   2.amazon cloudfront has 216 point of presence (205 edge locations and 11 regional edge caches) in 84 cities accross 42 countries.
+ 
+**cloudfront-Regional edge cache:- 
+   1.amazon cloudfront has added several regional edge cache locations globally,at close proximity to your viewers.
+   2.they are located between your origin webserver and the global edge locations that serve content directly to your viewers.
+   3.As object become less popular,individual edge locations may remove those object to make room for more popular content.
+   4.regional edge cache working as a alternative of origin to reduce the burden of origin.
+   5.regional edge cache have a large cache width than any individual edge location,so object remain in the cache longer at the nearest
+     regional edge caches.
+ 
+**cloudfront regional edge cache-working:-
+   1.when a viewer makes a request on your website or through your application,DNS routes the request to the cloudfront edge location that
+     can best serve the users request.
+   2.this location is typically the nearest cloudfront edge location in terms of latency.
+   3.In the edge location,cloudfront checks its cache for the requested files.
+   4.if the files are in the cache,cloudfront returns them to the user.
+   5.if the files are not in the cache,the edge server go to the nearest regional edge cache to fetch the object.
+   6.regional edge caches have feature parity  with edge locations for eg. a cache invalidation request remove an object from both edge 
+     caches and regional edge caches before it expires.
+   7.the next time a viewer request the object,cloudfront returns to the origin to fetch the latest version of the object.
+
+**Practical:-
+   1.create a s3 bucket,add object in that bucket and give them a public access.
+   2.go to the cloudfront and create a distribution.
+        1.origin name=====>select s3 bucket
+        2.name============>automatic
+        3.origin access===>public
+        4.viewer policy===>HTTP/HTTPS
+        5.allowed HTTP====>GET,HEAD
+        6.create a distribution
+  3.then copy the domain name and paste in the new tab
+  4.also copy the file name which we can add in s3 bucket.
+       
+          https://domainame/object name
+
+=======================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
