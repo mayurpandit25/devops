@@ -1,0 +1,339 @@
+                               	 **DEVOPS(DEVELOPMENT AND OPERATION)**
+  
+
+**what is water fall method:-
+     it is a method of following the step by step integration and deployment by manually.
+  
+   1.The waterfall model is a sequential software development methodology.
+   2.It is a linear approach that follows a specific order of phases, starting from requirements gathering to maintenance.
+   3.Each phase must be completed before the next phase can begin.
+   4.The requirements and design phases are typically very detailed and time-consuming.
+   5.The testing phase comes after implementation, and any errors found during testing may require going back to previous phases to fix them.
+   6.Once a phase is completed, it is difficult and costly to make changes.
+   7.The final product is delivered after all phases are completed.
+   8.The waterfall model is less flexible compared to Agile or DevOps methodologies.
+   9.It is typically used for projects with well-defined requirements and a clear understanding of what the final product should look like.
+  10.The waterfall model is still used in some industries, such as construction or manufacturing.
+
+**Drawbacks:-
+   1.its a time consuming
+   2.difficult to change the code after it has been created. 
+   3.without completing 1st step we can not go for 2nd step.
+   4.less feedback from the client.
+   5.high risk.
+   6.long development cycle.
+   7.difficult to manage complex projects.
+   8.lack of flexibility.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+**Agile method:-it is successor of water fall method.
+
+     it is a build short and build often process.
+
+   1.Agile projects are completed in small increments or iterations, typically lasting a few weeks to a few months.
+   2.Teams work in close collaboration with each other and with stakeholders, such as customers and product owners.
+   3.Agile emphasizes frequent communication and feedback, with a focus on adapting to change rather than following a strict plan.
+   4.Agile relies on self-organizing teams that are empowered to make decisions and take ownership of their work.
+   5.Agile values working software over comprehensive documentation, although documentation is still important.
+   6.Agile methodologies include Scrum, Kanban, and Extreme Programming (XP), among others.
+   7.Agile can be used in a wide variety of industries and projects, from software development to marketing to construction.
+   8.Overall, Agile is an iterative and flexible approach to project management that prioritizes collaboration, communication, and 
+     customer satisfaction.
+
+**Drawbacks:-
+   1.limited documentation.
+   2.lack of predictability.
+   3.time consuming.
+   4.difficult for scaling,automation.
+   5.Dependency on Client Involvement.
+   6.Need for Skilled Team Members.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+**DEVOPS:-it is successor of agile method.
+
+     it is a methedology of implementing the automation on each and every step.
+   
+   1.it is a combination of two methods i.e. development and operaton.
+   2.devops is a methedology that allows a single team to manage the entire application development life cycle,that is development,
+     testing,deploying and operation.
+   3.the objective of devops is to shorten the systems development life cycle.
+   4.devops is a software development approch through which superior quality software can be developed quickly and with more reliability.
+  
+
+ **devops stages:- 
+  a).version control:-
+      1.maintain different version of code.
+      2.it enables developers to manage changes to source code and other project files.
+      3.Version control systems help to reduce errors and facilitate better teamwork, improving productivity and enabling faster 
+        and more frequent releases.
+      4.Common version control systems used in DevOps include Git, SVN, and Mercurial.
+
+  b).continous integration:-
+      1.Continuous Integration helps to improve code quality and reduce the risk of errors, resulting in faster and more reliable 
+        software development.
+      2.Popular CI tools used in DevOps include Jenkins, Travis CI, and CircleCI, among others.
+   
+  c).continous delivery:-
+      1.CD helps to reduce the time and effort required for manual testing and deployment, enabling faster feedback and reducing the
+        risk of errors.
+      2.CD is an essential part of DevOps, as it enables teams to deliver software more quickly and reliably, improving customer 
+        satisfaction and reducing time-to-market.
+      3.Popular CD tools used in DevOps include Jenkins, Travis CI, and CircleCI, among others.
+   
+  d).continous deployment:-
+      1.The goal of CD is to automate the process of deploying code changes, enabling faster and more frequent releases with a higher
+        degree of confidence.
+      2.CD helps to reduce the time and effort required for manual testing and deployment, enabling faster feedback and reducing the
+        risk of errors.
+      3.CD is an advanced DevOps practice, as it requires a high degree of automation and testing to ensure that code changes are stable 
+        and do not cause problems in production environments.
+      4.Popular CD tools used in DevOps include Jenkins, Travis CI, and CircleCI, among others.   
+
+**Benefits:-
+  1.productivity
+  2.less load
+  3.collaboration
+  4.speed
+  5.quality of product
+  6.increased efficiency
+  7.faster time to market
+  8.continous improvement
+
+=========================================================================================================================================
+
+**git and github:-
+
+**sourch code management:-
+    it is used to manage all the codes and their versions.
+
+**there are two types of tools of management:-
+   1.centralised version control system
+   2.distributed version control system
+
+**centralised version control system:-(CVCS)
+   1.In centralised version control system the coders commit their code on central location i.e on repository.
+   2.when code commit on the repo we can update the code means the another user can access these code.
+   3.repository is a central location where we can store the code.
+
+**Drawbacks:-
+   1.it is not locally available meaning you always need to be connected to the network to perform any action.
+     since everything is centralised,if central server gets failed,you will lose the entire code that you can commit on the repository.
+     eg.SVM tool
+   2.Single point of failure
+   3.Limited offline access
+   4.Slow performance
+   5.Limited branching and merging capabilities
+   6.dependency on the central server
+   7.Limited scalability
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+**Distributed version control system:-(DVCS)
+   1.In distributed version control system the users can commit their data on the local repo first.
+   2.then push the data on central server.
+   3.so that the users have two copies of the code whether the centrl location should be down or not accessing we can access code in
+     our local repo.
+   4.In disrtibuted version control system every contributor has a local copy or clone of the main repository i.e. everyone maintained 
+     local repository of their own which contains all the files and metadata present in main repository.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+**GIT:-
+
+   1.it is a open source and distributed version control system where we can save all the different different types of codes and maintain 
+     their versions.
+   2.Git is a free and open-source distributed version control system designed to handle everything from small to very large projects 
+    with speed and efficiency.
+   3.it was designed by linus toravald in 2005 and has one of the most widely used version control systems in the software development 
+     in industry.
+   
+
+**GIT architecture:-
+  
+   1.Working Directory:
+       1.This is the directory on the developer's local machine where the files of the codebase are stored and where the developer makes 
+       changes.
+       2.it also a directory where we can create a code and save the code.
+       3.then with the help of git add we can add the code on the staging area.
+
+   2.Staging Area:-
+       1.Also known as the index, this is an intermediate area between the working directory and the repository.
+       2.it is area where we can review the code and also check the code whether it is running or not and do the modification also.
+       3.then with the help of git commit we can commit the code to the local repository.
+
+   3.Local Repository: 
+       1.it is a directory or folder on the developers machine where all our codes are stored.
+       2.we can access these local repo without the internet also.
+       3.when we add the code/file on the local repo their unique id should be created on the local repo means creates their versions.
+       4.and then with the help of git push we can push the code on the server means on the central repository.
+
+   4.Remote Repository:-
+       1.it is central repository where all the coders push their files.
+       2.so that other users can also see these files and pull the files from server to their local repo with the help of git pull.
+       
+                                                                           
+       working space====>git add====>staging area====>git commit====>local repository====>git push====>remote repo
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+ **commit:-
+      1.stores change in repository you will get one commit-ID
+      2.it is 40 alpha-numeric character.
+      3.it uses SHA-1 checksum concept.
+      4.even if you change one dot commit ID will get change.
+      5.it actually helps you to track the changes.
+      6.commit is also named as SHA-1 hash.
+      
+ **commit ID/version-ID/version:-
+      1.reference to identify each change.
+      2.with the help of commit ID we can identify which user can create these file.
+
+ **Tags:-
+      1.tags assign a meaningful name with a specific version on the repository once a tag is create for a particular save,even
+        if you create a new commit be updated.
+
+ **snapshot:-
+      1.represent some data of particular time.
+      2.it is always incremental i.e it stores the changes (appended data) only not entire copy.
+
+ **push:-
+      1.it is a command which we can used to push the file/code permanently from local repo to the remote repo.
+      2.but it can push the file/code in the form of copies.
+
+ **pull:-
+      1.pull is a command which we can used to pull the file/code from remote repo to the local repo.
+
+ **Branch:-
+      1.product is same , so one repository but different task.
+      2.each task has one separate branch.
+      3.finally merges (Code) all branches.
+      4.useful when you want to work parallely
+      5.can create one branch on the basis of another branch.
+      6.changes are personal to that particular branch.
+      7.default branch is "master".
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+**Advantages of GIT:-
+
+  1.free and open source:-
+     it can be available free we should not purchase it from anywhere.
+   
+  2.fast and small:-
+     as most of the operation are performed locally,therefore it is fast.
+
+  3.security:-
+     git uses a common cryptographic hash function called secure hash function (SHA1) to name and identify objoect 
+     within its database.
+ 
+  4.easier branching:-
+     if we create a new branch it will copy all the codes to new branch.
+
+  5.no need of powerful hardwares.
+  
+  6.Offline Access:-
+     Because every developer has their own local copy of the repository, Git allows for offline access to code.
+     This is especially useful for developers who work in areas with limited or unreliable internet connectivity.
+
+  7.Integration with Other Tools:-
+     Git integrates with a wide range of other tools, including code editors, continuous integration systems, and more.
+     This makes it easy to incorporate Git into your existing development workflow.
+
+  8.Speed and Performance:-
+     Git is designed to be fast and efficient, even with large repositories. This makes it a great choice for projects of
+     any size.
+      
+  9.Version Control:-
+     Git allows developers to track changes to code over time. This makes it easy to roll back to previous versions of code 
+     if necessary, and also helps with debugging and troubleshooting.
+
+ 10.Distributed Version Control:-
+     Git is a distributed version control system, which means every developer has their own local copy of the repository. 
+     This allows for easier collaboration and faster development.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+**Types of repository:-
+
+  A.Bare repositories (central repo):-
+    1.store and share only
+    2.all central repositories are bare repo.
+
+  B.Non-bare repositories (local repo):-
+    1.where you can modify the files.
+    2.all local repositories are non bare repo.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
