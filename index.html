@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Time</title>
+    <style>
+        .clock {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock" id="clock"></div>
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            hours = padZero(hours);
+            minutes = padZero(minutes);
+            seconds = padZero(seconds);
+
+            var timeString = hours + ":" + minutes + ":" + seconds;
+
+            document.getElementById("clock").innerHTML = timeString;
+        }
+
+        function padZero(number) {
+            return (number < 10) ? "0" + number : number;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
